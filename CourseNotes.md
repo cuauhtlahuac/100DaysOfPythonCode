@@ -4,5 +4,7 @@
 
 We gonna test the python code on [replit](https://replit.com/~) web app.
 
-test my username here
+Day 1:
+
+I'm gonna do this [exercise](https://replit.com/@cuauhtlahuac/day-1-1-exercise#main.py)
 

@@ -5,3 +5,7 @@ This a repo for a Udemy course [100 Days Of Python Code](https://www.udemy.com/c
 ### input function
 
 To get information from console
+
+### Basic python IDE
+
+[thonny](https://thonny.org/)

@@ -9,3 +9,41 @@ To get information from console
 ### Basic python IDE
 
 [thonny](https://thonny.org/)
+
+
+## Function and data types explanation
+
+Imagine that you have a fries machine but you try to get into that machine a rock, you should get an error.
+
+For example the function "len" only works with iterable data types, but with numbers not.
+
+- To check the type we have the function type()
+- To change data types we can use the python methods like "str" to change a value to string.
+
+
+#### Built-in Data Types in Python
+
+Binary Types: memoryview, bytearray, bytes
+
+Boolean Type: bool
+
+Set Types: frozenset, set
+
+Mapping Type: dict
+
+Sequence Types: range, tuple, list
+
+Numeric Types: complex, float, int
+
+Text Type: str
+
+
+| Type     | Methods                      |
+| -------- | ---------------------------- |
+| Binary   | memoryview, bytearray, bytes |
+| Boolean  | bool                         |
+| Set      | frozenset, set               |
+| Mapping  | dict                         |
+| Sequence | range, tuple, list           |
+| Numeric  | complex, float, int          |
+| Text     | str                          |

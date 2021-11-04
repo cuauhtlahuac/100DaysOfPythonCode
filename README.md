@@ -23,21 +23,6 @@ For example the function "len" only works with iterable data types, but with num
 
 #### Built-in Data Types in Python
 
-Binary Types: memoryview, bytearray, bytes
-
-Boolean Type: bool
-
-Set Types: frozenset, set
-
-Mapping Type: dict
-
-Sequence Types: range, tuple, list
-
-Numeric Types: complex, float, int
-
-Text Type: str
-
-
 | Type     | Methods                      |
 | -------- | ---------------------------- |
 | Binary   | memoryview, bytearray, bytes |

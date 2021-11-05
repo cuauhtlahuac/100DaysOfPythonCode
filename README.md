@@ -10,7 +10,6 @@ To get information from console
 
 [thonny](https://thonny.org/)
 
-
 ## Function and data types explanation
 
 Imagine that you have a fries machine but you try to get into that machine a rock, you should get an error.
@@ -19,7 +18,6 @@ For example the function "len" only works with iterable data types, but with num
 
 - To check the type we have the function type()
 - To change data types we can use the python methods like "str" to change a value to string.
-
 
 #### Built-in Data Types in Python
 

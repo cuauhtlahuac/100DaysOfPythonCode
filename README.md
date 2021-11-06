@@ -30,3 +30,28 @@ For example the function "len" only works with iterable data types, but with num
 | Sequence | range, tuple, list           |
 | Numeric  | complex, float, int          |
 | Text     | str                          |
+
+### Mathematical operatiors
+
+| symbol | operator       |
+| ------ | -------------- |
+| **     | Exponent       |
+| *      | Multiplication |
+| /      | Division       |
+| +      | Addition       |
+| -      | Subtraction    |
+
+### Operation order
+
+PEMDAS. Short way to refer to:
+
+Parentheses
+Exponents
+Multiplication
+Division
+Addition
+Subtraction
+
+That is the order that follow the rules of priority operators.
+
+Something important is the operator goes from left to right, so, no matter if the operator is / and then *, they have the same importance, so the program will gonna execute the left side first.

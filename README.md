@@ -55,3 +55,11 @@ Subtraction
 That is the order that follow the rules of priority operators.
 
 Something important is the operator goes from left to right, so, no matter if the operator is / and then *, they have the same importance, so the program will gonna execute the left side first.
+
+### "f" method
+
+Is like template literals in js.
+
+```py
+message = f"You have { days } days, { weeks } weeks, and { months } months left."
+```

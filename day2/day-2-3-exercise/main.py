@@ -14,4 +14,6 @@ days = int(current_years * days_in_a_year)
 weeks = current_years * weeks_in_a_year
 months = current_years * months_in_a_year
 
-print("You have " +  str(days) + " days, " + str(weeks) + " weeks, and " + str(months) +  " months left.")
+message = f"You have {days} days, {weeks} weeks, and {months} months left." # is like Template strings in js
+
+print(message)

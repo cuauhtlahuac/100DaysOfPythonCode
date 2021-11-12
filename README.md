@@ -63,3 +63,7 @@ Is like template literals in js.
 ```py
 message = f"You have { days } days, { weeks } weeks, and { months } months left."
 ```
+
+### Charts and diagrams
+
+check [draw.io](draw.io) to make conditional diagrams and charts

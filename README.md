@@ -67,3 +67,10 @@ message = f"You have { days } days, { weeks } weeks, and { months } months left.
 ### Charts and diagrams
 
 check [draw.io](draw.io) to make conditional diagrams and charts
+
+### elif statement
+
+you can do as many elifs as you want
+
+[Chart example](https://bit.ly/3oqjOhk) when you don't have an `elif` condition without
+[Chart example](https://bit.ly/3kxCLgI) when you HAVE an `elif` condition without

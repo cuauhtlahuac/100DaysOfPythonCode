@@ -6,4 +6,6 @@
 
 [Python random Module – Generate Random Numbers/Sequences](https://www.askpython.com/python-modules/python-random-module-generate-random-numbers-sequences): This article is about the random module in Python, which is used to generate pseudo-random numbers for various probabilistic distributions.
 
+## What is a random seed
+
 Seed in random number is something tha we can use to repeat a patter, depends on the size of the number of the initial seed. For example 41 is a two digit number length so we have to reach 100 number until we get the same numbers pattern.

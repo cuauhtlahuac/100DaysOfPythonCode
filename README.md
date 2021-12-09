@@ -6,6 +6,8 @@ This a repo for a Udemy course [100 Days Of Python Code](https://www.udemy.com/c
 ## Resources
 
 [ask_python.com](https://www.askpython.com/): Python Tutorials and Examples
+[programiz Python List Methods](https://www.programiz.com/python-programming/methods/list)
+
 ### input function
 
 To get information from console

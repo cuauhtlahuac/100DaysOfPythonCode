@@ -25,10 +25,26 @@ for symbol in range(0, nr_symbols):
 for number in range(0, nr_numbers):
     r_numbers_ += random.choice(numbers)
 
+first_password = r_letters_ + r_symbols_ + r_numbers_
 
-print(r_letters_ + r_symbols_ + r_numbers_)
+print(first_password)
+
 
 
 # Hard Level - Order of characters randomised:
 # e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
 
+password_list = []
+
+password_list[:0] = first_password
+
+temp = password_list.copy()
+
+new_password = ""
+
+for password in password_list:
+  item = random.choice(temp)
+  new_password += item
+  temp.remove(item)
+
+print(new_password)

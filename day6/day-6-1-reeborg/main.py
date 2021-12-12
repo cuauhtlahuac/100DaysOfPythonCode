@@ -17,11 +17,6 @@ def jump():
 def step():
     move()
     jump()
-    
-step()
-step()
-step()
-step()
-step()
-step()
 
+for step in range(0, 6):
+    step()

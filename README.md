@@ -10,6 +10,8 @@ This a repo for a Udemy course [100 Days Of Python Code](https://www.udemy.com/c
 
 [Built-in Functions](https://docs.python.org/3/library/functions.html): The Python interpreter has a number of functions and types built into it that are always available. They are listed here in alphabetical order.
 
+[PEP 8 -- Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/#introduction)
+
 ### input function
 
 To get information from console

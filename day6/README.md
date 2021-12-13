@@ -29,3 +29,13 @@ print("world")
 Watch the Silicon Valley Season 3 Episode 6.
 
 [Tabs versus Spaces](https://www.youtube.com/watch?v=SsoOG6ZeyUI)
+
+# While loop
+
+This will gonna work until the condition becomes to false
+
+```py
+while something_is_true:
+  #Do this
+  # then do...
+```

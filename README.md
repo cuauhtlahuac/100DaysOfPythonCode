@@ -2,11 +2,15 @@
 
 This a repo for a Udemy course [100 Days Of Python Code](https://www.udemy.com/course/100-days-of-code/) created by [Dr. Angela Yu](https://www.udemy.com/course/100-days-of-code/#instructor-1)
 
-
 ## Resources
 
 [ask_python.com](https://www.askpython.com/): Python Tutorials and Examples
+
 [programiz Python List Methods](https://www.programiz.com/python-programming/methods/list)
+
+[Built-in Functions](https://docs.python.org/3/library/functions.html): The Python interpreter has a number of functions and types built into it that are always available. They are listed here in alphabetical order.
+
+[PEP 8 -- Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/#introduction)
 
 ### input function
 

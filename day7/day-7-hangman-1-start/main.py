@@ -10,10 +10,13 @@ chosen_word = random.choice(word_list)
 
 #TODO-2 - Ask the user to guess a letter and assign their answer to a variable called guess. Make guess lowercase.
 
-guess = input(f"write a letter that you think is in the word: ")[-1]
+guess = input("Guess a letter: ")[-1].lower()
 
-print(f"the letter wrote was {guess}")
+print(f"The letter wrote was {guess}")
 #TODO-3 - Check if the letter the user guessed (guess) is one of the letters in the chosen_word.
 
-if guess in chosen_word:
-    print("You guessed")
+for letter in chosen_word:
+    if letter == guess:
+        print("Right")
+    else:    
+        print("Wrong")

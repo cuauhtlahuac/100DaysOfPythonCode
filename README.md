@@ -12,6 +12,7 @@ This a repo for a Udemy course [100 Days Of Python Code](https://www.udemy.com/c
 
 [PEP 8 -- Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/#introduction)
 
+[Google for education python](https://developers.google.com/edu/python/lists#range)
 ### input function
 
 To get information from console

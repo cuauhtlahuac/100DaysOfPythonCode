@@ -12,11 +12,11 @@ display = []
 for letter in chosen_word:
     display.append("_")
 
-user_guess = True
+end_of_game = False
 # You can give more live by adding a integer
-lives = len(display)
+lives = len(display) + 1
 
-while user_guess:
+while not end_of_game:
     guess = input("Guess a letter: ")[-1].lower()
     numberOfGuesses = 0
     for position in range(len(chosen_word)):
@@ -29,14 +29,14 @@ while user_guess:
 
     print(display, lives, numberOfGuesses)
 
-    if lives == 0:
-        print("you loose")
-        user_guess = False
-
     # the letters in the chosen_word and 'display' has no more blanks ("_").
-    try:
-        display.index("_")
-    except:
+    if "_" not in display:
         # Then you can tell the user they've won.
-        user_guess = False
         print("You win!")
+        end_of_game = True
+        continue
+
+    if lives <= 0:
+        end_of_game = True
+        print("you loose")
+        continue

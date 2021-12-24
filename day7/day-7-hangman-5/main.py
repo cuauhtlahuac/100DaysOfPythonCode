@@ -1,73 +1,21 @@
 import random
+import os
 from time import sleep
 from hangman_art import stages, logo
 from hangman_words import word_list
 
-stages = ['''
-  +---+
-  |   |
-  O   |
- /|\  |
- / \  |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
- /    |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|   |
-      |
-      |
-=========''', '''
-  +---+
-  |   |
-  O   |
-  |   |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
-      |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-      |
-      |
-      |
-      |
-=========
-''']
+def clear_console ():
+    os.system('clear')
 
 print(logo)
 sleep(2)
+
 end_of_game = False
 chosen_word = random.choice(word_list)
 display = []
 
 # Testing code
-print(f'Pssst, the solution is {chosen_word}.')
+# print(f'Pssst, the solution is {chosen_word}.')
 
 for letter in chosen_word:
     display.append("_")
@@ -94,9 +42,14 @@ while not end_of_game:
         #TODO-5: - If the letter is not in the chosen_word, print out the letter and let them know it's not in the word.
         lives -= 1
         print(f'\n"{guess}" is not in the word. You lose a life.')
+        print(f"\n{stages[lives]}")
+
+
 
     print("\n")
     print(display)
+    print("\n ")
+
     print("_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ ")
 
     # the letters in the chosen_word and 'display' has no more blanks ("_").

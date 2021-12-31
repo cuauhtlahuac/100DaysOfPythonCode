@@ -1,6 +1,6 @@
 # Write your code below this line 👇
 def its_prime(number):
-    for n in range(2, int(number**1/2)+1):
+    for n in range(2, number):
         if number % n == 0:
             return False
     return True

@@ -21,8 +21,12 @@ def divide(n1, n2):
 # Create a dictionary, where we store the operation sign as value  and the operator as key
 
 operations = {
-    add: '+',
-    substract: '-',
-    multiply: '*',
-    divide: '/'
+    '+': add,
+    '-': substract,
+    '*': multiply,
+    '/': divide
 }
+
+
+
+

@@ -18,7 +18,7 @@ def multiply(n1, n2):
 def divide(n1, n2):
     return n1 / n2
 
-# Create a dictionary, where we store the operation sign as value  and the operator as key
+# Create a dictionary, where we store the operation sign as key  and the operator function as value
 
 operations = {
     '+': add,
@@ -28,5 +28,13 @@ operations = {
 }
 
 
+num1 = int(input("What's the first number?: "))
+num2 = int(input("What's the second number?: "))
 
+for symbol in operations:
+    print(symbol)
+
+function = operations['+'] # here we assign the function
+
+print(function(2,7)) # we call the function
 

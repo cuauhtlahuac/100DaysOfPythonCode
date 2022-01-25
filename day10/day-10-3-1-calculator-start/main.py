@@ -29,7 +29,6 @@ operations = {
 
 
 num1 = int(input("What's the first number?: "))
-num2 = int(input("What's the second number?: "))
 
 for symbol in operations:
     print(symbol)
@@ -37,5 +36,9 @@ for symbol in operations:
 operation_symbol = input('Pick an operation from the line above: ')
 function = operations[operation_symbol] # here we assign the function
 
-print(function(num1, num2)) # we call the function
+num2 = int(input("What's the second number?: "))
+
+answer = function(num1, num2) # we call the function
+
+print(f"{num1} {operation_symbol} {num2} = {answer}")
 

@@ -42,3 +42,9 @@ answer = function(num1, num2) # we call the function
 
 print(f"{num1} {operation_symbol} {num2} = {answer}")
 
+operation_symbol = input('Pick an operation from the line above: ')
+function = operations[operation_symbol] # here we assign the function
+num3 = int(input("What's the second number?: "))
+second_answer = function(answer, num3) # as we use the value returned we can reuse here again
+
+print(f"{answer} {operation_symbol} {num3} = {second_answer}")

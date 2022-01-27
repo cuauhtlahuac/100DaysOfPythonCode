@@ -27,7 +27,6 @@ operations = {
     '/': divide
 }
 
-
 num1 = int(input("What's the first number?: "))
 
 for symbol in operations:
@@ -42,9 +41,21 @@ answer = function(num1, num2) # we call the function
 
 print(f"{num1} {operation_symbol} {num2} = {answer}")
 
-operation_symbol = input('Pick an operation from the line above: ')
-function = operations[operation_symbol] # here we assign the function
-num3 = int(input("What's the second number?: "))
-second_answer = function(answer, num3) # as we use the value returned we can reuse here again
+continue_with_answer = False
+want_exit = input(f"Type 'y' to continue calculation with {answer}, or type 'n' to exit.: ")[0].lower()
+if(want_exit == 'y'):
+    continue_with_answer = True
+while continue_with_answer:
+    operation_symbol = input('Pick an operation: ')
+    function = operations[operation_symbol] # here we assign the function
+    num3 = int(input("What's the second number?: "))
+    second_answer = function(answer, num3) # as we use the value returned we can reuse here again
 
-print(f"{answer} {operation_symbol} {num3} = {second_answer}")
+    print(f"{answer} {operation_symbol} {num3} = {second_answer}")
+
+    want_exit = input(f"Type 'y' to continue calculation with {second_answer}, or type 'n' to exit.: ")[0].lower()
+    if(want_exit == 'y'):
+        continue_with_answer = True
+        answer = second_answer
+    else:
+        continue_with_answer = False

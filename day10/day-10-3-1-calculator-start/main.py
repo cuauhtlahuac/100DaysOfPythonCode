@@ -27,25 +27,31 @@ operations = {
     '/': divide
 }
 
-num1 = int(input("What's the first number?: "))
+def calculator():
+        num1 = int(input("What's the first number?: "))
 
-for symbol in operations:
-    print(symbol)
+        for symbol in operations:
+            print(symbol)
 
-should_continue = True
+        should_continue = True
 
-while should_continue:
-    operation_symbol = input('Pick an operation (+ ,- ,* ,/ ): ')
-    function = operations[operation_symbol] # here we assign the function
+        while should_continue:
+            operation_symbol = input('Pick an operation (+ ,- ,* ,/ ): ')
+            function = operations[operation_symbol] # here we assign the function
 
-    num2 = int(input("What's the next number?: "))
+            num2 = int(input("What's the next number?: "))
 
-    answer = function(num1, num2) # we call the function
+            answer = function(num1, num2) # we call the function
 
-    print(f"{num1} {operation_symbol} {num2} = {answer}")
+            print(f"{num1} {operation_symbol} {num2} = {answer}")
 
-    want_exit = input(f"Type 'y' to continue calculation with {answer}, or type 'n' to exit.: ")[0].lower()
-    num1 = answer
-    if(want_exit != 'y'):
-        should_continue = False
- 
+            num1 = answer
+            if(input(f"Type 'y' to continue calculation with {answer}, or type 'n' to exit.: ")[0].lower() != 'y'):
+                should_continue = False
+        
+        if(input(f"Type 'y' to start a new calculation or type 'n' to totally exit.: ")[0].lower() == 'y'):
+            return calculator()
+        else:
+            print("Good bye")
+
+calculator()

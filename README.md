@@ -91,3 +91,17 @@ you can do as many elifs as you want
 ## Switching to new code page (No more Replit).
 
 [Coding Rooms](https://www.codingrooms.com/): The first real-time platform for teaching programming online and in-person that enables you to connect with each student, see their work, and engage with their code instantly.
+
+## Docstrings
+
+In Python you can make documentation inside of your function.
+
+```py
+# We have to put the doc between three quotation marks, we can use multiline
+
+def sum_int(n1, n2):
+  """ Takes two numbers and return a new one
+  with the addition """
+
+  return n1 + n2
+```

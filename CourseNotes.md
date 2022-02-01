@@ -8,3 +8,4 @@ Day 1:
 
 I'm gonna do this [exercise](https://replit.com/@cuauhtlahuac/day-1-1-exercise#main.py)
 
+Hello from windows

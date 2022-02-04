@@ -29,6 +29,7 @@
 
 from art import logo
 from random import choice
+from os import system
 
 cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 
@@ -49,15 +50,39 @@ def calculate_score(cards):
 
     return total
 
+continue_playing = True
 
-user_cards = getCards(2, [])
-score = calculate_score(user_cards)
-computer_card = getCards(1, [])
+while continue_playing:
+  num_cards = 2
+  play = input("Do you want to play a game of Blackjack? Type 'y' or 'n': ")[0].lower()
+  continue_playing = True if play == 'y' else False
 
-input("Do you want to play a game of Blackjack? Type 'y' or 'n': ")
-print(f"Your cards: {user_cards}, current score: {score}")
-print(f"Computer's first card: {computer_card}")
-input("Type 'y' to get another card, type 'n' to pass: ")
+  user_cards = getCards(num_cards, [])
+  score = calculate_score(user_cards)
+  computer_cards = getCards(num_cards, [])
+  start_game = continue_playing
+  # AGREGAR LA VALIDACION DE SI SE PASA DE 21 AUTOMATICAMENTE YO PIERDO
+  while start_game:
+    print(f"Your cards: {user_cards}, current score: {score}")
+    print(f"Computer's first card: {computer_cards[0]}")
+    if(input("Type 'y' to get another card, type 'n' to pass: ")[0].lower() == 'y'):
+        num_cards = 1
+        user_cards = getCards(num_cards, user_cards)
+        score = calculate_score(user_cards)
+        system('clear')
+    else:
+      computer_score = calculate_score(computer_cards)
+      print(f"our final hand: {user_cards}, final score: {score}")
+      print(f"Computer's final hand: {computer_cards}, final score: {computer_score}")
+      if(score > computer_score or computer_score > 21 and score <= 21):
+        print("you win")
+      elif(score > 21 and computer_score <= 21 or score < computer_score ):
+        print("You went over. You lose")
+      else:
+        print("Draw")
+      start_game = False
+
+print("Thanks for playing")
 
 # our final hand: [2, 7, 5, 10], final score: 24
 # Computer's final hand: [10, 10], final score: 20

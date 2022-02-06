@@ -32,6 +32,7 @@ from random import choice
 from os import system
 
 cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
+max_score = 21
 
 print(logo)
 
@@ -50,6 +51,9 @@ def calculate_score(cards):
 
     return total
 
+def user_lose(score):
+    return score > max_score
+
 continue_playing = True
 
 while continue_playing:
@@ -65,7 +69,7 @@ while continue_playing:
   while start_game:
     print(f"Your cards: {user_cards}, current score: {score}")
     print(f"Computer's first card: {computer_cards[0]}")
-    if(input("Type 'y' to get another card, type 'n' to pass: ")[0].lower() == 'y'):
+    if(not user_lose(score) and input("Type 'y' to get another card, type 'n' to pass: ")[0].lower() == 'y'):
         num_cards = 1
         user_cards = getCards(num_cards, user_cards)
         score = calculate_score(user_cards)
@@ -74,9 +78,9 @@ while continue_playing:
       computer_score = calculate_score(computer_cards)
       print(f"our final hand: {user_cards}, final score: {score}")
       print(f"Computer's final hand: {computer_cards}, final score: {computer_score}")
-      if(score > computer_score or computer_score > 21 and score <= 21):
+      if(score > computer_score and score < max_score or computer_score > max_score and score <= max_score):
         print("you win")
-      elif(score > 21 and computer_score <= 21 or score < computer_score ):
+      elif(score > max_score and computer_score <= max_score or score < computer_score ):
         print("You went over. You lose")
       else:
         print("Draw")

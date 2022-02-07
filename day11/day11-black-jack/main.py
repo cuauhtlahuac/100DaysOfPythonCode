@@ -22,7 +22,7 @@
 # The Jack/Queen/King all count as 10.
 # The the Ace can count as 11 or 1.
 # Use the following list as the deck of cards:
-## cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
+# cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 # The cards in the list have equal probability of being drawn.
 # Cards are not removed from the deck as they are drawn.
 # The computer is the dealer.
@@ -51,41 +51,51 @@ def calculate_score(cards):
 
     return total
 
+
 def user_lose(score):
     return score > max_score
+
 
 continue_playing = True
 
 while continue_playing:
-  num_cards = 2
-  play = input("Do you want to play a game of Blackjack? Type 'y' or 'n': ")[0].lower()
-  continue_playing = True if play == 'y' else False
+    num_cards = 2
+    play = input("\nDo you want to play a game of Blackjack? Type 'y' or 'n': ")[0].lower()
+    continue_playing = True if play == 'y' else False
 
-  user_cards = getCards(num_cards, [])
-  score = calculate_score(user_cards)
-  computer_cards = getCards(num_cards, [])
-  start_game = continue_playing
-  # AGREGAR LA VALIDACION DE SI SE PASA DE 21 AUTOMATICAMENTE YO PIERDO
-  while start_game:
-    print(f"Your cards: {user_cards}, current score: {score}")
-    print(f"Computer's first card: {computer_cards[0]}")
-    if(not user_lose(score) and input("Type 'y' to get another card, type 'n' to pass: ")[0].lower() == 'y'):
-        num_cards = 1
-        user_cards = getCards(num_cards, user_cards)
-        score = calculate_score(user_cards)
-        system('clear')
-    else:
-      computer_score = calculate_score(computer_cards)
-      print(f"our final hand: {user_cards}, final score: {score}")
-      print(f"Computer's final hand: {computer_cards}, final score: {computer_score}")
-      if(score > computer_score and score < max_score or computer_score > max_score and score <= max_score):
-        print("you win")
-      elif(score > max_score and computer_score <= max_score or score < computer_score ):
-        print("You went over. You lose")
-      else:
-        print("Draw")
-      start_game = False
+    user_cards = getCards(num_cards, [])
+    score = calculate_score(user_cards)
+    computer_cards = getCards(num_cards, [])
+    start_game = continue_playing
 
+    while start_game:
+        if 11 in user_cards and score > max_score:
+          user_cards.remove(11)
+          user_cards.append(1)
+          score = calculate_score(user_cards)
+
+        print(f"\n* Your cards: {user_cards}, current score: {score}")
+        print(f"* Computer's first card: {computer_cards[0]}")
+        print("* first user card: ", user_cards)
+
+        if(not user_lose(score) and input("Type 'y' to get another card, type 'n' to pass: ")[0].lower() == 'y'):
+            num_cards = 1
+            user_cards = getCards(num_cards, user_cards)
+            score = calculate_score(user_cards)
+        else:
+            computer_score = calculate_score(computer_cards)
+            print(f"\nour final hand: {user_cards}, final score: {score}")
+            print(
+                f"Computer's final hand: {computer_cards}, final score: {computer_score}")
+            if(score > computer_score and score <= max_score or computer_score > max_score):
+                print("you win ✅")
+            elif(score > max_score and computer_score <= max_score or score < computer_score):
+                print("You went over. You lose 🚩")
+            else:
+                print("Draw 🏳")
+            start_game = False
+
+system('clear')
 print("Thanks for playing")
 
 # our final hand: [2, 7, 5, 10], final score: 24
@@ -109,11 +119,11 @@ print("Thanks for playing")
 
 # Hint 4: Create a deal_card() function that uses the List below to *return* a random card.
 # 11 is the Ace.
-#cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
+# cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 
 # Hint 5: Deal the user and computer 2 cards each using deal_card() and append().
-#user_cards = []
-#computer_cards = []
+# user_cards = []
+# computer_cards = []
 
 # Hint 6: Create a function called calculate_score() that takes a List of cards as input
 # and returns the score.

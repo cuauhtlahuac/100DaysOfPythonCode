@@ -8,3 +8,9 @@ def increase_enemies():
 
 increase_enemies()
 print(f"enemies outside function: {enemies}") # print 1
+
+
+if 3 > 2:
+    a_variable = 10
+
+print(a_variable) # it can access 

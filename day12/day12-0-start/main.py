@@ -1,9 +1,14 @@
 ################### Scope ####################
 
-enemies = 1
+enemies = 1 # this is a global scope variable
 
 def increase_enemies():
-  enemies = 2
+  enemies = 2 # here it creates a new local scope variable, thats why it prints 2 instead 1
+  print(f"enemies inside function: {enemies}") # print 2
+
+def increase_enemies_global():
+  global enemies # to use the variable outside fo the function (NO RECOMMENDED)
+  enemies += 1
   print(f"enemies inside function: {enemies}") # print 2
 
 increase_enemies()

@@ -14,16 +14,16 @@
 # print(dice_imgs[dice_num])
 
 # Play Computer
-year = int(input("What's your year of birth?"))
-if year > 1980 and year < 1994:
-  print("You are a millennial.")
-elif year >= 1994:
-  print("You are a Gen Z.")
+# year = int(input("What's your year of birth?"))
+# if year > 1980 and year < 1994:
+#   print("You are a millennial.")
+# elif year >= 1994:
+#   print("You are a Gen Z.")
 
-# # Fix the Errors
-# age = input("How old are you?")
-# if age > 18:
-# print("You can drive at age {age}.")
+# Fix the Errors
+age = int(input("How old are you?"))
+if age > 18:
+  print(f"You can drive at age {age}.") # here the program hightlight the print statement because is out of the if scope
 
 # #Print is Your Friend
 # pages = 0

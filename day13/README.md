@@ -9,3 +9,5 @@
 ## 4.- Fixing Errors and Watching for Red Underlines
 
 ## 5.- Print is your friend
+
+## 6.- Use a Debugger

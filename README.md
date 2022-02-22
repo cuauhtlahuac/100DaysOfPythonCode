@@ -18,6 +18,8 @@ This a repo for a Udemy course [100 Days Of Python Code](https://www.udemy.com/c
 
 [Get your own ASCII text](http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20)
 
+[Debug your python code](https://pythontutor.com/visualize.html#mode=edit)
+
 ### input function
 
 To get information from console

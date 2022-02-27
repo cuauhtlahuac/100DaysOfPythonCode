@@ -11,3 +11,7 @@
  / /___/ /_/ / |/ |/ /  __/ /    
 /_____/\____/|__/|__/\___/_/     """
 ```
+
+## Random repetition info
+
+[Randomly select elements from list without repetition in Python](https://www.geeksforgeeks.org/randomly-select-elements-from-list-without-repetition-in-python/)

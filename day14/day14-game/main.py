@@ -15,3 +15,5 @@ print(first_choice)
 print(vs)
 
 print(second_choice)
+
+# I have to find the way to burn the lower choice in order to don't show it again

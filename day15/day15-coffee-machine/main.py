@@ -1,5 +1,5 @@
 from coffee_resources import resources, MENU, coffee_types
-from utils import show_coffee_types
+from utils import show_coffee_types, generate_report
 print(resources["water"])
 print(MENU["espresso"]["cost"])
 
@@ -9,11 +9,11 @@ print(MENU["espresso"]["cost"])
 # TODO Prompt user by asking “What would you like? (espresso/latte/cappuccino):”
     # The prompt should show every time action has completed
 
-user_choice = input(f"“What would you like? {show_coffee_types(coffee_types)}:”")
-
-# TODO The prompt should show every time action has completed
+user_choice = input(f"What would you like? {show_coffee_types(coffee_types)}:")
 
 # TODO 3. Print report.
+if(user_choice == "report"):
+    print(generate_report(resources, 2.5))
 
 # TODO 4. Check resources sufficient?
 

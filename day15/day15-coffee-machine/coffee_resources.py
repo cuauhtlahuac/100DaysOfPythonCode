@@ -1,12 +1,14 @@
+coffee_types = ["espresso", "latte", "cappuccino"]
+
 MENU = {
-    "espresso": {
+    coffee_types[0]: {
         "ingredients": {
             "water": 50,
             "coffee": 18,
         },
         "cost": 1.5,
     },
-    "latte": {
+    coffee_types[1]: {
         "ingredients": {
             "water": 200,
             "milk": 150,
@@ -14,7 +16,7 @@ MENU = {
         },
         "cost": 2.5,
     },
-    "cappuccino": {
+    coffee_types[2]: {
         "ingredients": {
             "water": 250,
             "milk": 100,
@@ -23,8 +25,6 @@ MENU = {
         "cost": 3.0,
     }
 }
-
-coffee_types = ["espresso", "latte", "cappuccino"]
 
 resources = {
     "water": 300,

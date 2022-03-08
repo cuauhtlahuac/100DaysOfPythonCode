@@ -12,3 +12,12 @@ def show_coffee_types(coffee_types_list):
         index += 1
 
     return formatted_coffee_types
+
+
+def generate_report(resources, money):
+    report = ""
+    for coffee in resources:
+        name = str(coffee).capitalize()
+        report += f"{name}: {resources[coffee]}ml\n"
+    report += f"Money: ${money}"
+    return report

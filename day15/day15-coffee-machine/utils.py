@@ -1,5 +1,5 @@
-def show_coffee_types(coffe_types_list):
-    types_list = coffe_types_list
+def show_coffee_types(coffee_types_list):
+    types_list = coffee_types_list
     formatted_coffee_types = ""
     index = 0
     for coffee in types_list:

@@ -13,12 +13,13 @@ while has_resources:
     try:
         resources = calculate_resources(resources, user_choice)
     except:
+        # TODO 4. Check resources sufficient?
         has_resources = False
+
 # TODO 3. Print report.
 if(user_choice == "report"):
     print(generate_report(resources, 2.5))
 
-# TODO 4. Check resources sufficient?
 
 # TODO 5. Process coins.
 

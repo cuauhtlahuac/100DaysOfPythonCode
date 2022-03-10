@@ -28,7 +28,7 @@ def calculate_resources(resources, user_choice):
     for resource in temp_resources:
         temp_resources[resource] -= user_choice['ingredients'][resource]
         if temp_resources[resource] < 0:
-            raise print(f"You don't have enough {resource}")
+            raise print(f"Sorry there is not enough {resource}")
     return temp_resources
 
 

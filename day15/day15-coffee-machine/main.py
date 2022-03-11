@@ -1,8 +1,7 @@
 from coffee_resources import resources, MENU, coffee_types
-from utils import show_coffee_types,\
-                generate_report,\
-                calculate_resources,\
-                get_user_choice
+from utils import show_coffee_types, generate_report,\
+                  calculate_resources, get_user_choice,\
+                  process_coins
 
 has_resources = True
 
@@ -14,6 +13,7 @@ while has_resources:
         resources = calculate_resources(resources, user_choice)
     except:
         # TODO 4. Check resources sufficient?
+        process_coins()
         has_resources = False
 
 # TODO 3. Print report.

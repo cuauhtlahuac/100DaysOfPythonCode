@@ -34,3 +34,17 @@ def calculate_resources(resources, user_choice):
 
 def get_user_choice(menu, user_choice):
     return menu[user_choice]
+
+
+def process_coins():
+    # Calculate the monetary value of the coins inserted.
+    # E.g. 1 quarter, 2 dimes, 1 nickel, 2 pennies:
+    #  =     0.25     + 0.1 x 2  + 0.05 + 0.01 x 2 = $0.52
+    quarter = 0.25
+    dimes = 0.1
+    nickel = 0.05
+    pennies = 0.001
+    inserted_coins = input("Please insert coins: ")
+    return
+
+    # Remember that quarters = $0.25, dimes = $0.10, nickles = $0.05, pennies = $0.01

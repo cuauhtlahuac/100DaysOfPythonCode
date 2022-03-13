@@ -33,7 +33,8 @@ def calculate_resources(resources, user_choice):
 
 
 def get_user_choice(menu, user_choice):
-    return menu[user_choice]
+    if user_choice in menu:
+        return menu[user_choice]
 
 
 def process_coins():

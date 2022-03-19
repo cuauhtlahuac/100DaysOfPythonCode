@@ -1,3 +1,8 @@
+# Resources
+
+[Turtle graphics](https://docs.python.org/3/library/turtle.html)
+[Turtle colors](https://pythonguides.com/python-turtle-colors/)
+
 # OOP
 
 Spaghetti code is like the Kardashian-Jenner dating history

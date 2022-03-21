@@ -1,7 +1,7 @@
 import another_module
-import turtle
+from turtle import Turtle
 
 print(another_module.another_variable)
 
 # let's create a new instance of turtle
-timmy = turtle.Turtle()
+timmy = Turtle()

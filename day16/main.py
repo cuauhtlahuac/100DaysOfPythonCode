@@ -7,6 +7,8 @@ print(another_module.another_variable)
 timmy = Turtle()
 timmy.shape('turtle')
 
+timmy.right(45)
+
 screen = Screen()
 
 print(screen.canvheight)

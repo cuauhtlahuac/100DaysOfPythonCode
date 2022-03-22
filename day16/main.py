@@ -5,6 +5,7 @@ print(another_module.another_variable)
 
 # let's create a new instance of turtle
 timmy = Turtle()
+timmy.shape('turtle')
 
 screen = Screen()
 

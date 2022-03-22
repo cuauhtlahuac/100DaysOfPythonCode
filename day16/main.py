@@ -9,3 +9,5 @@ timmy = Turtle()
 screen = Screen()
 
 print(screen.canvheight)
+
+screen.exitonclick()

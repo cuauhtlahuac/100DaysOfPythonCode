@@ -58,3 +58,9 @@ def take_order(table, order):
 def take_payment(amount):
     # money to restaurant
 ```
+
+## Package
+They are a bunch of files and modules that someone else wrote to use them.
+
+### pyPi
+[pyPi](https://pypi.org/): The Python Package Index (PyPI) is a repository of software for the Python programming language. (It's like npm:)

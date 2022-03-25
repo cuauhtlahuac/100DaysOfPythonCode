@@ -6,4 +6,13 @@ table_x.add_column("Pokemon Name", ["Pikachu", "Squirtle", "Charmander"])
 table_x.add_column("Type", ["Electric", "water", "Fire"])
 table_x.left_padding_width = 5
 table_x.right_padding_width = 5
+table_x.vertical_char = '*'
+
+"""
+*     Pokemon Name     *       Type       *
+|:--------------------:|:----------------:|
+*       Pikachu        *     Electric     *
+*       Squirtle       *      water       *
+*      Charmander      *       Fire       *
+"""
 print(table_x)

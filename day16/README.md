@@ -67,3 +67,10 @@ They are a bunch of files and modules that someone else wrote to use them.
 
 ### To install
 to install a package with pycharm just go to file -> setting -> click on your project -> project interpreter -> plus button and search for the package -> selected and click install
+
+## Markdown Table style pasted here 🏂
+| Pokemon Name |   Type   |
+|:------------:|:--------:|
+|   Pikachu    | Electric |
+|   Squirtle   |  water   |
+|  Charmander  |   Fire   |

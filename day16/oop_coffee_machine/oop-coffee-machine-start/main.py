@@ -13,10 +13,12 @@ while is_on:
     choice = input(f"What would you like? ({ options }): ")
     if choice == "off":
         is_on = False
-    if choice == 'report':
+    elif choice == 'report':
         coffee_maker.report()
         money_machine.report()
-    if not menu.find_drink(choice):
+    elif not menu.find_drink(choice):
         print(menu.find_drink(choice))
     else:
-        print(coffee_maker.is_resource_sufficient(menu.find_drink(choice)))
+        drink = menu.find_drink(choice)
+        print(coffee_maker.is_resource_sufficient(drink))
+        money_machine.make_payment(drink.cost)

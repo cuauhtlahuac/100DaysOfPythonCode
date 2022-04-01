@@ -1,3 +1,8 @@
+# Resources
+
+[Turtle graphics](https://docs.python.org/3/library/turtle.html)
+[Turtle colors](https://pythonguides.com/python-turtle-colors/)
+
 # OOP
 
 Spaghetti code is like the Kardashian-Jenner dating history
@@ -53,3 +58,19 @@ def take_order(table, order):
 def take_payment(amount):
     # money to restaurant
 ```
+
+## Package
+They are a bunch of files and modules that someone else wrote to use them.
+
+### pyPi
+[pyPi](https://pypi.org/): The Python Package Index (PyPI) is a repository of software for the Python programming language. (It's like npm:)
+
+### To install
+to install a package with pycharm just go to file -> setting -> click on your project -> project interpreter -> plus button and search for the package -> selected and click install
+
+## Markdown Table style pasted here 🏂
+| Pokemon Name |     Type |
+|-------------:|---------:|
+|      Pikachu | Electric |
+|     Squirtle |    water |
+|   Charmander |     Fire |

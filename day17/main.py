@@ -1,11 +1,9 @@
 class User:
-    pass  # to avoid the indentation error for emptiness
+    def __init__(self, user_id, user_name):
+        self.id = user_id
+        self.name = user_name
 
 
-user_1 = User()  # syntax to create an object from a class
-
-# You can add attributes with dot notation
-user_1.id = "001"
-user_1.name = "Juan Perez"
+user_1 = User("001", "Juan Perez")  # initialize with constructor def, in order to avoid typo errors
 
 print(user_1.name)

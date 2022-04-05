@@ -20,10 +20,7 @@ Think about the different components about a delf driving car. You can brake dow
 
 ## Imagine a restaurant
 
-Imagine that you have a restaturant and you do all the task, you're de witress, cooker, etc...
-
-
-You can think in a one man restaurante but the size is limited
+Imagine that you have a restaturant and you do all the task, you're de waiter, cooker, etc. For example a one man restaurant, in this case he can do all the task but with limitation like the size of restaurant.
 
 <img height="200" src="https://theweekendedition.com.au/wp-content/uploads/2015/05/TWE-HarajukuGyozaSB-071-1100x550-c-center.png"/>
 
@@ -42,7 +39,7 @@ The reason is to model real world objects with code.
 
  let's think in two things, what it has and what it does
  
-has: (attributes)
+**has**: (attributes)
 ```py
 is_holding_plate = True
 ```
@@ -50,7 +47,7 @@ is_holding_plate = True
 tables_responsible = [2, 3, 4]
 ```
 
-does: (methods)
+**does**: (methods)
 ```py
 def take_order(table, order):
     # takes order to the chef

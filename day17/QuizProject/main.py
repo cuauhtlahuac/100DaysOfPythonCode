@@ -1,6 +1,15 @@
 from question_model import Question
+from data import question_data
 
-new_q = Question("2 + 4 = 6", "True")
 
-print(new_q.text)
-print(new_q.answer)
+def build_question_bank():
+    new_data_list = []
+    for data in question_data:
+        new_data_list.append(Question(data['text'], data['answer']))
+
+    return new_data_list
+
+
+question_bank = build_question_bank()
+
+print(question_bank)

@@ -1,3 +1,7 @@
+#
+# This file is only for info proposes
+#
+
 from question_model import Question
 from data import question_data
 

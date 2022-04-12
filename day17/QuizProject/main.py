@@ -3,6 +3,7 @@
 #
 
 from question_model import Question
+from quiz_brain import QuizBrain
 from data import question_data
 
 
@@ -15,5 +16,4 @@ def build_question_bank():
 
 
 question_bank = build_question_bank()
-
-print(question_bank)
+quiz_brain = QuizBrain(question_bank)

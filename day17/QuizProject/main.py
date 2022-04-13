@@ -17,3 +17,6 @@ def build_question_bank():
 
 question_bank = build_question_bank()
 quiz_brain = QuizBrain(question_bank)
+
+while quiz_brain.quiz_continue:
+    quiz_brain.ask_question()

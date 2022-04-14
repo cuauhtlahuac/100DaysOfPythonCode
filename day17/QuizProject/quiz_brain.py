@@ -1,10 +1,6 @@
 from random import randint
 
 
-def get_user_answer(question):
-    return input(f'{question} - please type: True / False. ').capitalize()
-
-
 def handle_answer(user_answer=None, correct_answer=None):
     if user_answer == correct_answer:
         print("CORRECT")
@@ -15,8 +11,13 @@ def handle_answer(user_answer=None, correct_answer=None):
 
 class QuizBrain:
     def __init__(self, question_list):
+        self.question_number = 0
         self.question_list = question_list
         self.quiz_continue = True
+
+    def __get_user_answer(self, question):
+        self.question_number += 1
+        return input(f'Q.{self.question_number}: {question} (True/False): ').capitalize()
 
     def __get_question(self, index):  # double underscore to make a private method
         return self.question_list[index]
@@ -35,7 +36,7 @@ class QuizBrain:
             index = randint(0, length - 1)
             question = self.__get_question(index)
             self.__delete_question_from_list(index)
-            user_answer = get_user_answer(question.text)
+            user_answer = self.__get_user_answer(question.text)
             # checking if the answer was correct
             handle_answer(user_answer, question.answer)
 

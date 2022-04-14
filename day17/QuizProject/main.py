@@ -10,7 +10,7 @@ from data import question_data
 def build_question_bank():
     new_data_list = []
     for data in question_data:
-        new_data_list.append(Question(data['text'], data['answer']))
+        new_data_list.append(Question(data['question'], data['correct_answer']))
 
     return new_data_list
 

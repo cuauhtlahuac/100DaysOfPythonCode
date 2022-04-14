@@ -1,4 +1,5 @@
 from random import randint
+from html import unescape
 
 
 class QuizBrain:
@@ -18,7 +19,7 @@ class QuizBrain:
 
     def __get_user_answer(self, question):
         self.question_number += 1
-        return input(f'Q.{self.question_number}: {question} (True/False): ').capitalize()
+        return input(f"Q.{self.question_number}: {unescape(question)} (True/False): ").capitalize()
 
     def __get_question(self, index):  # double underscore to make a private method
         return self.question_list[index]

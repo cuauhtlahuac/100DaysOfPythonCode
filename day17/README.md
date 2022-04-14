@@ -15,3 +15,8 @@ In this day we will build a Quiz Game
   }
 }
 ````
+## Open TRIVIA Database
+
+Page to generate a Json with question database
+
+[opentdb](https://opentdb.com/)

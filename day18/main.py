@@ -4,6 +4,7 @@ from turtle import Turtle,\
 
 timmy_the_turtle = Turtle()
 timmy_the_turtle.shape("turtle")
+timmy_the_turtle.color("red")
 
 color('red', 'yellow')
 begin_fill()

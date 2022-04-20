@@ -1,20 +1,16 @@
-from turtle import Turtle,\
-    Screen, color, begin_fill,\
-    forward, left, pos, end_fill, done
+from turtle import Turtle, Screen
 
 timmy_the_turtle = Turtle()
 timmy_the_turtle.shape("turtle")
-timmy_the_turtle.color("red")
+timmy_the_turtle.color('red', 'yellow')
+timmy_the_turtle.begin_fill()
 
-color('red', 'yellow')
-begin_fill()
 while True:
-    forward(20)
-    left(20)
-    if abs(pos()) < 1:
+    timmy_the_turtle.forward(20)
+    timmy_the_turtle.left(20)
+    if abs(timmy_the_turtle.pos()) < 1:
         break
-end_fill()
-done()
+timmy_the_turtle.end_fill()
 
 screen = Screen()
 

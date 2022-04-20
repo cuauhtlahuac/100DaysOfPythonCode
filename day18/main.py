@@ -3,6 +3,7 @@ from turtle import Turtle,\
     forward, left, pos, end_fill, done
 
 timmy_the_turtle = Turtle()
+timmy_the_turtle.shape("turtle")
 
 color('red', 'yellow')
 begin_fill()

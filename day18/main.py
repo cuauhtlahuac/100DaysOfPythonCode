@@ -2,8 +2,18 @@ from turtle import Turtle, Screen
 
 timmy_the_turtle = Turtle()
 timmy_the_turtle.shape("turtle")
-timmy_the_turtle.color('red', 'yellow')
+timmy_the_turtle.color('red', 'turquoise')
+
 timmy_the_turtle.begin_fill()
+
+timmy_the_turtle.forward(100)
+timmy_the_turtle.right(90)
+timmy_the_turtle.forward(100)
+timmy_the_turtle.right(90)
+timmy_the_turtle.forward(100)
+timmy_the_turtle.right(90)
+timmy_the_turtle.forward(100)
+
 
 while True:
     timmy_the_turtle.forward(20)

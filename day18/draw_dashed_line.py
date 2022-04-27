@@ -14,8 +14,7 @@ tim.width(3)
 tim.pendown()
 
 for _ in range(int(win_width / 20)):
-    print(tim.pos(), win_width)
-    if abs(tim.pos()) > win_width:
+    if abs(tim.xcor()) > win_width / 2:
         tim.right(90)
 
     tim.forward(10)

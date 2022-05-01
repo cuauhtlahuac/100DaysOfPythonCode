@@ -35,17 +35,23 @@ def choice_side():
 
 def draw(distance=10):
     angle = choice(angles)
+    choice_side()(angle)
     tim.color(choice_color())
     x_pos = tim.pos()[0]
     y_pos = tim.pos()[1]
-    if x_pos <= left_limit or x_pos >= right_limit:
-        angle = angle * -1
-        print('touched', x_pos, left_limit, angle)
-    else:
-        print('not touched')
-    if y_pos >= top_limit or y_pos <= bottom_limit:
-        angle = angle * -1
-    choice_side()(angle)
+
+    if x_pos <= left_limit:
+        tim.setx(0)
+
+    if x_pos >= right_limit:
+        tim.setx(0)
+
+    if y_pos >= top_limit:
+        tim.sety(0)
+
+    if y_pos <= bottom_limit:
+        tim.sety(0)
+
     tim.forward(distance)
 
 
@@ -57,4 +63,4 @@ tim.width(0.1)
 stroke: int = 1
 
 while True:
-    draw(10)
+    draw(25)

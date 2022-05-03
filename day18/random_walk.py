@@ -59,6 +59,7 @@ tim = Turtle()
 tim.shape("classic")
 tim.color(choice_color(), choice_color())
 tim.width(0.1)
+tim.speed(10)
 
 stroke: int = 1
 

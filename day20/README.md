@@ -13,3 +13,5 @@
 - create a score board
 - Detect collision with wall:  show a game over message
 - Detect collision with tail
+
+#### Hello from windows 10 system

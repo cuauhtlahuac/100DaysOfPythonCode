@@ -1,7 +1,7 @@
-from turtle import Turtle, Screen
+from turtle import Screen
 from food import Food
 from utils import KeyListener
-
+from snake import Snake
 
 def positive_limit(distance):
     return (distance / 2) - 25
@@ -23,13 +23,8 @@ screen_T_limit = positive_limit(height)
 screen_B_limit = negative_limit(height)
 
 screen.bgcolor('black')
-snake = Turtle()
-snake.color('white')
-snake.penup()
-snake.speed(6)  # o to 10
+snake = Snake()
 
-snake.shape("square")
-snake.shapesize(1, 2)
 
 key_listener = KeyListener(snake, screen)
 key_listener.keys_activate()

@@ -16,6 +16,7 @@ class Food(Turtle):
         distance = (((self.xcor() - turtle.xcor()) ** 2) + ((self.ycor() - turtle.ycor()) ** 2)) ** 0.5
         if distance < 20:
             self.__create_new_food()
+            turtle.snake_grow()
 
     def __create_new_food(self):
         self.penup()

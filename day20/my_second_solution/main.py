@@ -6,13 +6,12 @@ screen.setup(width=600, height=600)
 screen.bgcolor("black")
 screen.title("Snake Game .")
 
-# tree squares
+starting_positions = [(0, 0),(-20, 0) ,(-40, 0)]
 
-snake = Snake()
-snake_2 = Snake()
-snake_3 = Snake()
-snake_2.goto(-20,0)
-snake_3.goto(-40,0)
+for position in starting_positions:
+    segment = Snake()
+    segment.goto(position)
+    segment.forward(20)
 
 
 

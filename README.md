@@ -1,5 +1,9 @@
 # 100 Days Of Python Code
 
+### Password generation
+
+[Day 5](../100DaysOfPythonCode/day5/day-5-password-generator/main.py), execute: ```python3 day5/day-5-password-generator/main.py```
+
 This a repo for a Udemy course [100 Days Of Python Code](https://www.udemy.com/course/100-days-of-code/) created by [Dr. Angela Yu](https://www.udemy.com/course/100-days-of-code/#instructor-1)
 
 ## Resources

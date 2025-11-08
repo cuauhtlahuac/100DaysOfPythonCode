@@ -28,12 +28,15 @@ while game_is_on:
     print("----- - Game is running - -----")
     screen.update()
     time.sleep(1)
+    # segments[0].forward(20)
     for seg in segments:
+        print(f"Segment {seg.name} id: {id(segment)}")
         print(f"X: {seg.xcor()} Y: {seg.ycor()}")
         # seg.print_name()
         seg.goto(segments[0].xcor(), segments[0].ycor())
-        segments[0].forward(20)
-    
+        # segments[0].forward(20)
+        seg.forward(20)
+
 
 
 

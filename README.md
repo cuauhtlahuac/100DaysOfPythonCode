@@ -114,3 +114,18 @@ def sum_int(n1, n2):
 
   return n1 + n2
 ```
+
+
+## To run virtual environments we can:
+
+run first this commands.
+
+```alias pyinstall='python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt'```
+
+To activate.
+
+```alias apv='source .venv/bin/activate'```
+
+To deactivate
+
+`alias dpv='deactivate'`

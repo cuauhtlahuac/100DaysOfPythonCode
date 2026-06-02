@@ -1,4 +1,4 @@
-from turtle import Screen
+from turtle import Screen, listen, onkeypress
 from Snake import Snake
 import time
 
@@ -12,30 +12,43 @@ screen.tracer(0)
 
 #                      x  y    x   y     x   y        
 starting_positions = [(0, 0),(-20, 0) ,(-40, 0)]
+colors = ["red", "yellow", "blue"]
 
 segments = []
 
-for position in starting_positions:
-    segment = Snake()
+for index, position in enumerate(starting_positions):
+    segment = Snake(colors[index])
     segment.goto(position)
-    segment.set_name(f"name: {position[0]}")
-    segment.listen_on()
+    segment.set_distance_behind(position[0])
+    segment.set_name(f"snake_{index} ")
     segments.append(segment)
 
 game_is_on = True
+
+listen()
+
+head = segments[0]
+
+onkeypress(head.turn_left, "Left")
+onkeypress(head.turn_right, "Right")
+onkeypress(head.turn_up, "Up")
+onkeypress(head.turn_down, "Down")
 
 while game_is_on:
     print("----- - Game is running - -----")
     screen.update()
     time.sleep(1)
-    # segments[0].forward(20)
-    for seg in segments:
-        print(f"Segment {seg.name} id: {id(segment)}")
-        print(f"X: {seg.xcor()} Y: {seg.ycor()}")
-        # seg.print_name()
-        seg.goto(segments[0].xcor(), segments[0].ycor())
-        # segments[0].forward(20)
-        seg.forward(20)
+    for index, seg in enumerate(segments):
+        seg.print_name()
+        if id(seg) == id(head):
+            print(f"is head: X: {head.xcor()} Y: {head.ycor()}")
+            head.forward(20)
+        else:
+            print(f"X: {seg.xcor()} Y: {seg.ycor()}")
+            seg.set_python_position(head.xcor() + seg.distance_behind, head.ycor() + seg.distance_behind)
+            
+        
+    
 
 
 

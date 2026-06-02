@@ -1,5 +1,17 @@
 # 100 Days Of Python Code
 
+## I create a venv using uv (rust python gestor) "uv venv" to run:
+
+```
+source .venv/bin/activate
+```
+
+To install any new library that folder:
+
+```
+uv pip install <nombre_libreria>
+```
+
 ### Password generation
 
 [Day 5](../100DaysOfPythonCode/day5/day-5-password-generator/main.py), execute: ```python3 day5/day-5-password-generator/main.py```
